@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/04/2023 08:07:53 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.modelo.Domicilio" table="DOMICILIO">
+        <id name="IDDOMICILIO" type="int">
+            <column name="IDDOMICILIO" />
+            <generator class="increment" />
+        </id>
+        <property name="IDCIUDADANO" type="int">
+            <column name="IDCIUDADANO" />
+        </property>
+        <property name="CALLE" type="java.lang.String">
+            <column name="CALLE" />
+        </property>
+        <property name="NUMEXT" type="int">
+            <column name="NUMEXT" />
+        </property>
+        <property name="NUMINT" type="int">
+            <column name="NUMINT" />
+        </property>
+        <property name="COLONIA" type="java.lang.String">
+            <column name="COLONIA" />
+        </property>
+        <property name="CP" type="java.lang.String">
+            <column name="CP" />
+        </property>
+        <property name="CIUDAD" type="java.lang.String">
+            <column name="CIUDAD" />
+        </property>
+        <property name="ESTADO" type="java.lang.String">
+            <column name="ESTADO" />
+        </property>
+    </class>
+</hibernate-mapping>
